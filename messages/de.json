@@ -1,0 +1,225 @@
+{
+  "hero": {
+    "title": "Hallo, ich bin Frontend-Entwicklerin",
+    "subtitle": "Frontend-Entwicklerin mit Fokus auf schnelle, schöne und barrierefreie Websites.",
+    "logoAlt": "sRoVoN Logo",
+    "projectInfo": "Einige meiner persönlichen Projekte finden Sie <link>hier</link>."
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "themeToggle": {
+    "light": "Hell",
+    "dark": "Dunkel"
+  },
+  "sidebar": {
+    "name": "Soodeh Arvin",
+    "logoAlt": "sRoVoN Logo",
+    "title": "Frontend-Entwicklerin",
+    "bio": "Leidenschaft für sauberen Code & minimalistisches Design",
+    "avatar": "@/public/avatar.png"
+  },
+  "about": {
+    "intro": "Ich bin eine Frontend-Entwicklerin mit fast drei Jahren praktischer Erfahrung in der Entwicklung schneller und skalierbarer Webanwendungen. Meine Lernreise begann mit Offline-Kursen von Code With Mosh. Anschließend habe ich einen React-Kurs bei TopLearn abgeschlossen und mein Wissen durch Tutorials auf YouTube und anderen Plattformen stetig erweitert. Ich habe mehrere persönliche Projekte mit Fokus auf sauberen Code, Benutzererfahrung und Performance umgesetzt. Ich beherrsche HTML, CSS, JavaScript, React, Next.js, React Query, Redux, Tailwind CSS, Bootstrap, Material UI und Git. Ich liebe kontinuierliches Lernen und bin bereit, in einem professionellen Team mitzuwirken und mein Wissen weiter auszubauen."
+  },
+  "projects": {
+    "title": "Projekte",
+    "viewAll": "Alle Projekte ansehen",
+    "liveDemo": "Live-Demo",
+    "sourceCode": "Quellcode",
+
+    "forecast-app": {
+      "title": "Wettervorhersage App",
+      "short": "Zeigt aktuelles Wetter und Vorhersagen an.",
+      "full": "Diese App ruft Wetterdaten von der OpenWeather API ab und zeigt das aktuelle Wetter sowie stündliche und tägliche Vorhersagen an. Luxon wird zur Anzeige der lokalen Zeit verwendet.",
+      "back": "Zurück zu den Projekten",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Verwendet eine externe API (OpenWeather), um präzise Wetterdaten abzurufen",
+        "Luxon wird verwendet, um die lokale Uhrzeit jeder Stadt anzuzeigen",
+        "Ermöglicht das Hinzufügen einer benutzerdefinierten Stadt zusätzlich zu 5 voreingestellten Städten (gespeichert in sessionStorage)",
+        "Möglichkeit, die Temperatureinheit (metrisch, imperial oder standard) zusammen mit dem Stadtnamen auszuwählen, um genauere Antworten von der API zu erhalten.",
+        "Dynamische Hintergrundfarbe basierend auf der aktuellen Temperatur (z. B. Blau für kalt, Orange für warm)",
+        "Toasts und Warnmeldungen informieren den Nutzer über Ereignisse (z. B. doppelte Städte oder Verbindungsfehler)",
+        "Ein Algorithmus zur Datenbereinigung vereinfacht die API-Antwort, bevor sie an Komponenten weitergegeben wird",
+        "Responsives Design mit unterschiedlichem Layout für Desktop und Mobilgeräte (z. B. runde Buttons auf dem Handy)"
+      ]
+    },
+
+    "calculator-app": {
+      "title": "Taschenrechner App",
+      "short": "Einfacher und sauberer Rechner mit grundlegenden Funktionen.",
+      "full": "Dieses Projekt ist ein einfacher, aber strukturiert aufgebauter Taschenrechner, der mit React und der Context-API entwickelt wurde. Der Schwerpunkt liegt auf dem State-Management und der Trennung von Logik und Benutzeroberfläche.",
+      "back": "Zurück zu den Projekten",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Erstellt mit React und Context API zur Verwaltung des gesamten Zustands des Rechners",
+        "Trennung der Rechenlogik von der Benutzeroberfläche für bessere Lesbarkeit und Wartbarkeit",
+        "Unterstützt grundlegende Rechenoperationen: Addition, Subtraktion, Multiplikation und Division",
+        "Verwendet useState und useContext zur Definition und Aktualisierung der Werte num, sign und res",
+        "Klar unterscheidbare Behandlung der verschiedenen Tastenarten (Zahlen, Operatoren, Gleichheit, Löschen usw.)",
+        "Minimales und responsives Design mit CSS unter Berücksichtigung einfacher und praxisnaher UX-Prinzipien"
+      ]
+    },
+
+    "movies-app": {
+      "title": "Film App",
+      "short": "Durchsuche und entdecke Filme über eine externe API.",
+      "full": "Ein Film-Browser, mit dem Benutzer Filme suchen und Details anzeigen können. Verwendet React und eine Film-API für die Daten.",
+      "back": "Zurück zu den Projekten",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Verwendung von React und Context API zur Verwaltung des Suchstatus und der Filmdaten",
+        "Möglichkeit, gleichzeitig nach Filmtitel und Erscheinungsjahr zu suchen",
+        "Verbindung zur offiziellen OMDb-API, um genaue und aktuelle Filmdaten abzurufen",
+        "Anzeige von Fehlermeldungen und Ladezustand zur Verbesserung der Benutzererfahrung",
+        "Umfassendes Zustandsmanagement mit useState und Context, einschließlich Daten, Fehlern und Benutzereingaben",
+        "Dynamische Aktualisierung der Suchergebnisse durch Klicken auf die Schaltfläche 'Search' zum Abrufen neuer Daten",
+        "Responsives Design, das für verschiedene Geräte (Mobilgeräte, Tablets, Desktops) optimiert ist, um ein nahtloses Nutzungserlebnis zu gewährleisten"
+      ]
+    },
+
+    "tasks-app": {
+      "title": "Aufgabenverwaltung App",
+      "short": "Eine einfache App zur Verwaltung und Verschiebung von Aufgaben per Drag & Drop.",
+      "full": "In diesem Projekt können Benutzer Aufgaben hinzufügen, bearbeiten, löschen und zwischen zwei Listen (Erledigt und Offen) per Drag & Drop verschieben. Die Benutzeroberfläche wurde mit React und TypeScript erstellt und react-beautiful-dnd wird für die Drag-and-Drop-Funktionalität verwendet.",
+      "back": "← Zurück zu den Projekten",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Erstellt mit React und TypeScript für eine stabile und flexible Struktur",
+        "Neue Aufgaben hinzufügen und in der Liste speichern",
+        "Aufgaben bearbeiten und Änderungen speichern",
+        "Aufgaben sofort aus der Liste löschen",
+        "Aufgaben als erledigt markieren und in die 'Erledigt'-Liste verschieben",
+        "Drag & Drop-Funktionalität zwischen Spalten mit react-beautiful-dnd",
+        "Sofortige Aktualisierung der Benutzeroberfläche beim Umschalten des Aufgabenstatus (erledigt/offen)",
+        "Klares und responsives UI mit CSS-Modulen",
+        "Gut strukturierte Komponenten für bessere Lesbarkeit und Wartbarkeit"
+      ]
+    },
+    "pagination-app": {
+      "title": "Paginierungsprojekt App",
+      "short": "Datenanzeige mit Seitennummerierung.",
+      "full": "In dieser Anwendung werden die Daten schrittweise und seitenweise von einer externen API (JSONPlaceholder) abgerufen. Dieser Ansatz verhindert, dass große Datenmengen auf einmal geladen werden, was zu Leistungsproblemen oder einem Absturz der Anwendung führen könnte. Durch die Verwendung von Paginierung werden nur die für jede Seite benötigten Daten abgerufen, was die Effizienz, Benutzerfreundlichkeit (UX) und Skalierbarkeit der Anwendung verbessert",
+      "back": " ← Zurück zu den Projekten",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Verwendung von React und useState zur Verwaltung des Seitenstatus und der Daten",
+        "Abruf von paginierten Daten von einer externen API (JSONPlaceholder)",
+        "Verwendung von useEffect zur Synchronisierung der Daten bei Seitenwechsel",
+        "Einsatz von MUI-Komponenten wie Pagination, Typography und Box für ein responsives UI",
+        "Anzeige von Titeln und Inhalten der Beiträge pro Seite",
+        "Steuerung der Anzahl der Elemente pro Seite über die Query-String",
+        "Moderne und responsive Gestaltung mit Material UI und benutzerdefinierter Farbgestaltung"
+      ]
+    },
+    "infinite-scrolling-app": {
+      "title": "Unendliches Scrollen App",
+      "short": "Lädt Inhalte beim Scrollen des Benutzers.",
+      "full": "Dieses Projekt wurde mit React und der Intersection Observer API umgesetzt. Wenn der Benutzer das Ende der Seite erreicht, werden automatisch neue Beiträge von einer API abgerufen und zur bestehenden Liste hinzugefügt. Diese Methode sorgt für ein flüssigeres und effizienteres Nutzererlebnis.",
+      "back": "← Zurück zu den Projekten",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Erstellt mit React unter Verwendung von useState, useEffect und useRef zur Zustands- und DOM-Verwaltung",
+        "Verwendet die Intersection Observer API, um das Erreichen des Seitenendes zu erkennen",
+        "Schrittweises Laden von Daten mithilfe der Parameter `page` und `limit` von der JSONPlaceholder API",
+        "Fehlerbehandlung beim Laden von Daten mit entsprechender Fehlermeldung",
+        "Modularer und wartbarer Codeaufbau für zukünftige Erweiterungen",
+        "Klares und minimalistisches Design mit einfachem CSS",
+        "Reduzierung der anfänglichen Ladezeit durch Lazy Loading von Inhalten"
+      ]
+    },
+    "crona-app": {
+      "title": "Corona-Tracker-App",
+      "short": "Anzeige aktueller COVID-19-Statistiken mit fortschrittlicher Datenverwaltung und automatischem Caching.",
+      "full": "Dieses interaktive Dashboard nutzt die offizielle API des Robert Koch-Instituts, um tägliche COVID-19-Statistiken nach Bundesländern und Gesamtdeutschland anzuzeigen. Das Projekt verwendet React Query für eine fortschrittliche Datenverwaltung, einschließlich automatischem Caching und Echtzeit-Updates. TypeScript sorgt für Typsicherheit und verbessert die Codequalität und Wartbarkeit. Die Benutzeroberfläche enthält interaktive Diagramme mit Recharts und statistische Karten, die es Nutzern ermöglichen, benutzerdefinierte Zeiträume und Regionen auszuwählen.",
+      "back": " ← Zurück zu den Projekten ",
+      "detailsTitle": "Hauptmerkmale",
+      "details": [
+        "Fortschrittliche Datenverwaltung mit React Query für Caching, automatische Updates und Anfragenhandling",
+        "Verwendung von TypeScript zur Gewährleistung der Typsicherheit und Verbesserung der Codequalität",
+        "Gleichzeitiges Abrufen von Daten (Promise.all) von der offiziellen API des öffentlichen Gesundheitswesens",
+        "Interaktive Visualisierung von täglichen Fällen, Genesungen und Todesfällen mit Recharts",
+        "Filterung durch Nutzer nach benutzerdefinierten Zeiträumen",
+        "Responsives UI-Design mit optimierter Leistung durch Komponententrennung",
+        "Auswahlmöglichkeit von Bundesländern oder dem gesamten Land mit Echtzeit-Updates von Diagrammen und Karten"
+      ]
+    },
+    "pomodoro-app": {
+      "title": "Pomodoro App",
+      "short": "Ein Fokus-Timer basierend auf der Pomodoro-Technik.",
+      "full": "Diese Anwendung ist ein Pomodoro-Timer, der Ihnen hilft, Arbeits- und Pausenzeiten strukturiert zu verwalten. Sie bietet mehrere Modi wie Pomodoro, kurze Pause und lange Pause, und die Benutzeroberfläche wurde mit Material UI gestaltet.",
+      "back": " ← Zurück zu den Projekten ",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Wechsel zwischen drei Modi: Pomodoro, kurze Pause und lange Pause",
+        "Anzeige der Zeit in Minuten und Sekunden mit automatischer Aktualisierung",
+        "Erstellt mit React und useState/useEffect zur Verwaltung von Zeit und Zustand",
+        "Responsives und minimalistisches Design mit Material UI",
+        "Starten, Pausieren und Zurücksetzen des Timers",
+        "Hintergrundfarbe ändert sich je nach ausgewähltem Modus",
+        "Sauberer und wartbarer Code durch Trennung von Logik und Benutzeroberfläche"
+      ]
+    },
+    "bingo-app": {
+      "title": "Bingo-Anwendung",
+      "short": "Ein interaktives Bingo-Spiel mit Kartenmischung und Gewinnermuster-Erkennung.",
+      "full": "Diese Bingo-Spielanwendung wurde mit React entwickelt. Die Karten werden zufällig gemischt, während die mittlere Karte fixiert bleibt. Benutzer markieren Zellen durch Klicken, und wenn ein Gewinnmuster vervollständigt wird, gratuliert das Spiel dem Spieler mit Konfetti-Anzeige und Soundeffekten.",
+      "back": "Zurück zu den Projekten ←",
+      "detailsTitle": "Hauptmerkmale",
+      "details": [
+        "Verwendet React und useState zur Verwaltung des Karten- und Spielstatus",
+        "Erkennt Gewinnmuster beim Bingo mit einem benutzerdefinierten Algorithmus",
+        "Behält die mittlere Karte während des Mischens fixiert",
+        "Zeigt visuelle Effekte wie das Schütteln angeklickter Karten, Durchstreichen von Zellen und das Abspielen eines Gratulationssounds bei Gewinnmuster-Erkennung",
+        "Responsives Design mit Tailwind CSS für optimale Darstellung auf verschiedenen Geräten"
+      ]
+    },
+    "blog-app": {
+      "title": "Blog-Anwendung",
+      "short": "Eine Blog-App zur Verwaltung von Beiträgen und Benutzerreaktionen, entwickelt mit Redux Toolkit und React.",
+      "full": "Diese Blog-Anwendung wurde mit React, Redux Toolkit und React Router entwickelt. Beiträge werden von der öffentlichen JSONPlaceholder-API abgerufen und Funktionen wie das Erstellen neuer Beiträge, Bearbeiten, Löschen und das Hinzufügen von Reaktionen (z. B. Likes und Emojis) sind verfügbar. Der Zustand wird in localStorage gespeichert, sodass Änderungen der Benutzer auch nach einem Neuladen des Browsers erhalten bleiben. Außerdem wird der Entity Adapter für eine normalisierte Datenverwaltung und Sortierung nach Datum verwendet.",
+      "back": " ← Zurück zu Projekten ",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Zustandsverwaltung mit Redux Toolkit und Entity Adapter",
+        "Abrufen von Beiträgen aus JSONPlaceholder mit Filterung und Limitierung",
+        "Vollständige CRUD-Unterstützung: erstellen, bearbeiten und löschen",
+        "Reaktionen zu Beiträgen hinzufügen (Likes, Herzen, Lachen, Traurigkeit usw.)",
+        "Datenpersistenz und Synchronisierung mit localStorage",
+        "Benutzerverwaltung in Verbindung mit Blog-Beiträgen",
+        "Navigation mit React Router für verschiedene Ansichten"
+      ]
+    },
+    "user-app": {
+      "title": "Benutzerverwaltungs-App",
+      "short": "Eine CRUD-Anwendung zur Verwaltung von Benutzern mit Redux Toolkit Query und lokalem Speicher.",
+      "full": "Diese Anwendung wurde mit React, Redux Toolkit Query und React Router entwickelt. Sie ruft Benutzer von einer öffentlichen API (JSONPlaceholder) ab und ermöglicht gleichzeitig die vollständige Verwaltung von benutzerdefinierten Daten, die im localStorage gespeichert sind. Zu den Funktionen gehören das Hinzufügen neuer Benutzer, das Bearbeiten von Informationen, das Anzeigen von Details und das Löschen von Einträgen. Die Daten werden zwischen API und localStorage synchronisiert, um eine flüssige Benutzererfahrung ohne Neuladen zu gewährleisten.",
+      "back": " ← Zurück zu Projekten ",
+      "detailsTitle": "Hauptfunktionen",
+      "details": [
+        "Verwendung von Redux Toolkit Query für Anfragen und Daten-Caching",
+        "Zusammenführung von API-Benutzern (JSONPlaceholder) mit lokal gespeicherten Benutzern",
+        "Vollständige CRUD-Unterstützung: hinzufügen, bearbeiten, löschen und anzeigen",
+        "Optimistische Updates für ein nahtloses Erlebnis ohne Neuladen",
+        "Routenverwaltung mit React Router (Liste, Detail, Hinzufügen und Bearbeiten)",
+        "TypeScript für Typensicherheit",
+        "Einfache und responsive Gestaltung mit SCSS"
+      ]
+    }
+  },
+  "contact":{
+  "title": "Kontakt aufnehmen",
+  "text": "Ich bin jederzeit offen für Gespräche über Jobmöglichkeiten, Zusammenarbeit oder neue Projekte. Sie können mich per E-Mail oder über GitHub kontaktieren.",
+  "emailLabel": "E-Mail schreiben",
+  "emailValue": "soodeh.arvin@gmail.com",
+  "githubLabel": "GitHub",
+  "githubUrl": "https://github.com/srovon",
+  "linkdinUrl": "https://www.linkedin.com/in/soodeh-arvin-sRoVoN",
+  "linkdinLabel": "linkdin"
+}
+
+}

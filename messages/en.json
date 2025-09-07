@@ -1,0 +1,226 @@
+{
+  "hero": {
+    "title": "Hi, I'm a Frontend Developer",
+    "subtitle": "A frontend developer focused on building fast, beautiful, and accessible websites.",
+    "projectInfo": "You can check out some of my personal projects <link>here</link>.",
+    "logoAlt": "sRoVoN Logo"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "themeToggle": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "sidebar": {
+    "name": "Soodeh Arvin",
+    "logoAlt": "sRoVoN Logo",
+    "title": "Frontend Developer",
+    "bio": "Passionate about clean code & minimal design",
+    "avatar": "@/public/avatar.png"
+  },
+  "about": {
+    "intro": "I’m a frontend developer with nearly three years of hands-on experience in building fast and scalable web applications. I started my learning journey with offline courses from Code With Mosh and completed a React course on TopLearn. I continued expanding my knowledge through YouTube tutorials and other online platforms. I’ve built multiple personal projects focusing on clean code, performance, and user experience. I am proficient in HTML, CSS, JavaScript, React, Next.js, React Query, Redux, Tailwind CSS, Bootstrap, Material UI, and Git. I’m passionate about continuous learning and eager to join a team where I can grow further and contribute to real-world products."
+  },
+  "projects": {
+    "title": "Projects",
+    "viewAll": "View All Projects",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code",
+    "forecast-app": {
+      "title": "Weather Forecast App",
+      "short": "Displays current and forecast weather conditions.",
+      "full": "This project fetches weather data from OpenWeather API and displays current, hourly, and daily forecasts. Luxon is used to format local time.",
+      "back": "Back to Projects",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Uses external API (OpenWeather) to fetch accurate weather data",
+        "Uses Luxon to display each city’s local time",
+        "Allows adding a custom city alongside 5 default cities (stored in sessionStorage)",
+        "Ability to select the temperature unit (metric, imperial, or standard) alongside the city name to receive more accurate responses from the API.",
+        "Displays dynamic background color based on current temperature (e.g., blue for cold, orange for hot)",
+        "Provides user feedback via toasts and alerts (e.g., for duplicate cities or connection errors)",
+        "Implements a data cleaning algorithm to simplify the API response before passing it to components",
+        "Fully responsive design, with layout differences between desktop and mobile (e.g., circular buttons on mobile)"
+      ]
+    },
+
+    "calculator-app": {
+      "title": "Calculator App",
+      "short": "A clean and functional calculator UI.",
+      "full": "This project is a simple yet structured calculator built with React and the Context API, focusing on state management and the separation of logic from the user interface.",
+      "back": "Back to Projects ",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Built with React and Context API to manage the calculator’s overall state",
+        "Separation of calculation logic from the UI for better readability and maintainability",
+        "Supports basic arithmetic operations: addition, subtraction, multiplication, and division",
+        "Accurate handling of the equal (=) button with input checks and error prevention",
+        "Uses useState and useContext to define and update num, sign, and res values",
+        "Clear distinction in handling each button type (numbers, operators, equals, clear, etc.)",
+        "Minimal and responsive design using CSS with a focus on simple and practical UX principles"
+      ]
+    },
+
+    "movies-app": {
+      "title": "Movies App",
+      "short": "Search and explore movies from an external API.",
+      "full": "A movie browser that allows users to search for films and see detailed info using a third-party movie API. Built with React and styled-components.",
+      "back": "Back to Projects",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Using React and Context API to manage the state of search and movie data",
+        "Ability to search by movie title and release year simultaneously",
+        "Connecting to the official OMDb API to fetch accurate and up-to-date movie data",
+        "Displaying error messages and loading status to enhance user experience",
+        "Comprehensive state management using useState and Context, including data, errors, and user input",
+        "Dynamic update of search results by clicking the Search button to fetch new data",
+        "Responsive design optimized for various devices (mobile, tablet, desktop) to ensure a seamless user experience"
+      ]
+    },
+
+    "tasks-app": {
+      "title": "Task Manager App",
+      "short": "A simple app for managing and moving tasks with Drag & Drop.",
+      "full": "This project allows users to add, edit, delete, and move tasks between two lists (Completed and Incomplete) using Drag & Drop. The UI is built with React and TypeScript, and react-beautiful-dnd is used to implement the drag-and-drop functionality.",
+      "back": "← Back to Projects",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Built with React and TypeScript for a robust and flexible structure",
+        "Add new tasks and store them in the list",
+        "Edit tasks and save changes",
+        "Instantly delete tasks from the list",
+        "Mark tasks as completed and move them to the completed list",
+        "Drag & Drop functionality between columns using react-beautiful-dnd",
+        "Instant UI updates when toggling task status (completed/incomplete)",
+        "Clean and responsive UI using CSS Modules",
+        "Well-structured components for better readability and maintainability"
+      ]
+    },
+
+    "pagination-app": {
+      "title": "Pagination App",
+      "short": "Displaying data with pagination.",
+      "full": "This application fetches data from an external API (JSONPlaceholder) in a paginated and incremental manner. Instead of loading all records at once, which can cause performance issues or app crashes, the data is retrieved page by page based on user interaction. This improves load times, ensures better performance, and enhances the scalability and user experience.",
+      "back": " ← Back to Projects",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Using React and useState to manage the current page and data state",
+        "Fetching paginated data from an external API (JSONPlaceholder)",
+        "Using useEffect to synchronize data on page change",
+        "Utilizing MUI components like Pagination, Typography, and Box for a responsive UI",
+        "Displaying post titles and content per page",
+        "Controlling the number of items per page via query string",
+        "Modern, responsive design using Material UI with custom color theming"
+      ]
+    },
+    "infinite-scrolling-app": {
+      "title": "Infinite Scroll App",
+      "short": "Load content as the user scrolls.",
+      "full": "This project is built with React using the Intersection Observer API. When the user reaches the bottom of the page, new posts are automatically fetched from an API and appended to the existing list. This approach provides a smoother and more efficient user experience.",
+      "back": "← Back to Projects",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Built with React using useState, useEffect, and useRef to manage state and DOM interaction",
+        "Uses the Intersection Observer API to detect when the user reaches the bottom of the page",
+        "Incremental data loading using `page` and `limit` query parameters from the JSONPlaceholder API",
+        "Handles errors during data fetching and displays appropriate error messages",
+        "Modular and maintainable code structure for future scalability",
+        "Clean and minimal design using basic CSS",
+        "Reduces initial page load by lazy loading additional content"
+      ]
+    },
+    "crona-app": {
+      "title": "Corona Tracker App",
+      "short": "Displays up-to-date COVID-19 statistics with advanced data management and automatic caching.",
+      "full": "This interactive dashboard uses the official Robert Koch Institute API to show daily COVID-19 statistics by federal states and the country. The project leverages React Query for advanced data management, including automatic caching and real-time updates. TypeScript is used to ensure type safety and improve code quality and maintainability. The UI features interactive charts built with Recharts and statistical cards, allowing users to select custom time ranges and regions.",
+      "detailsTitle": "Key Features",
+      "back": " ← Back to projects ",
+      "details": [
+        "Advanced data management with React Query for caching, automatic updates, and request handling",
+        "Use of TypeScript to guarantee type safety and improve code quality",
+        "Concurrent data fetching (Promise.all) from the official public health API",
+        "Interactive visualization of daily cases, recoveries, and deaths using Recharts",
+        "User-selectable filtering by custom time periods",
+        "Responsive UI design with optimized performance via component separation",
+        "Ability to select federal states or the entire country with real-time updates of charts and cards"
+      ]
+    },
+    "pomodoro-app": {
+      "title": "Pomodoro App",
+      "short": "A focus timer based on the Pomodoro technique.",
+      "full": "This application is a Pomodoro timer that helps you manage your work and break times in a structured way. It includes multiple modes such as Pomodoro, short break, and long break, and its user interface is designed with Material UI.",
+      "back": " ← Back to projects ",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Switch between three modes: Pomodoro, Short Break, and Long Break",
+        "Display time in minutes and seconds with automatic updates",
+        "Built with React and useState/useEffect for time and state management",
+        "Responsive and minimal design using Material UI",
+        "Start, pause, and reset the timer",
+        "Change background color based on the selected mode",
+        "Clean and maintainable code with separation of logic from UI"
+      ]
+    },
+    "bingo-app": {
+      "title": "Bingo Application",
+      "short": "An interactive Bingo game with card shuffling and winner pattern detection.",
+      "full": "This Bingo game application is built using React. The cards are shuffled randomly while the center card remains fixed. Users mark cells by clicking on them, and when a winning pattern is completed, the game congratulates the player by displaying confetti and playing a sound.",
+      "back": "Back to projects ←",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Uses React and useState to manage card and game state",
+        "Detects winning Bingo patterns with a custom algorithm",
+        "Keeps the center card fixed during card shuffling",
+        "Displays visual effects including shaking clicked cards, striking through cells, and playing a congratulatory sound when a winning pattern is detected",
+        "Responsive design using Tailwind CSS for optimal display on different devices"
+      ]
+    },
+    "blog-app": {
+      "title": "Blog Application",
+      "short": "A blog app for managing posts and user reactions, built with Redux Toolkit and React.",
+      "full": "This blog application is developed using React, Redux Toolkit, and React Router. It fetches posts from the public JSONPlaceholder API and provides features like creating new posts, editing, deleting, and adding reactions (such as likes and emojis). The state is persisted to localStorage so that user changes remain after refreshing the browser. It also leverages Entity Adapter for normalized data management and sorting by date.",
+      "back": " ← Back to Projects ",
+      "detailsTitle": "Key Features",
+      "details": [
+        "State management with Redux Toolkit and Entity Adapter",
+        "Fetching posts from JSONPlaceholder with filtering and limiting",
+        "Full CRUD support: create, edit, and delete posts",
+        "Add reactions (likes, hearts, laughs, sadness, etc.) to posts",
+        "Data persistence and synchronization with localStorage",
+        "User management linked to blog posts",
+        "Navigation with React Router for multiple views"
+      ]
+    },
+    "user-app": {
+      "title": "User Management App",
+      "short": "A CRUD application for managing users using Redux Toolkit Query and local storage.",
+      "full": "This application is built with React, Redux Toolkit Query, and React Router. It fetches users from a public API (JSONPlaceholder) while also supporting full management of custom users stored in localStorage. Features include adding new users, editing details, viewing profiles, and deleting entries. Data is synchronized between the API and localStorage, ensuring a smooth, refresh-free user experience.",
+      "back": " ← Back to Projects ",
+      "detailsTitle": "Key Features",
+      "details": [
+        "Uses Redux Toolkit Query for request handling and data caching",
+        "Merges API users (JSONPlaceholder) with locally stored users",
+        "Full CRUD support: add, edit, delete, and view users",
+        "Optimistic updates for a seamless experience without refresh",
+        "Route management with React Router (list, detail, add, and edit views)",
+        "TypeScript integration for type safety",
+        "Simple and responsive styling with SCSS"
+      ]
+    }
+  },
+  "contact": {
+  "title": "Get in Touch",
+  "text":"I’m always open to discussing job opportunities, collaborations, or new projects. You can reach me via email or GitHub.",
+  "emailLabel": "Email Me",
+  "emailValue": "soodeh.arvin@gmail.com",
+  "githubLabel": "GitHub",
+  "githubUrl": "https://github.com/srovon",
+  "linkdinUrl": "https://www.linkedin.com/in/soodeh-arvin-sRoVoN",
+  "linkdinLabel": "linkdin"
+}
+
+}
