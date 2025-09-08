@@ -13,6 +13,7 @@ type Props = {
 export default function MobileSidebar({ navLinks, tNav }: Props) {
   return (
     <>
+      {/* Top Navigation */}
       <div className="md:hidden w-full bg-white dark:bg-neutral-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 shadow-sm">
         <div className="flex items-center justify-between h-14 px-4">
           {/* Navigation tabs افقی */}
@@ -27,16 +28,17 @@ export default function MobileSidebar({ navLinks, tNav }: Props) {
               </a>
             ))}
           </nav>
-
-          {/* Language toggle کنار تب‌ها */}
-          <div className="flex items-center ml-2">
-            <LanguageToggle />
-          </div>
         </div>
       </div>
-      {/* Dark mode toggle فیکس پایین */}
-      <div className="md:hidden fixed bottom-4 right-4 z-50 w-12 h-12 rounded-full bg-white dark:bg-neutral-800 flex items-center justify-center shadow-lg">
+
+      {/* Dark Mode Toggle پایین سمت راست */}
+      <div className="md:hidden fixed bottom-4 right-4 z-50 w-12 h-12  flex items-center justify-center shadow-lg">
         <ThemeToggle />
+      </div>
+
+      {/* Language Toggle پایین سمت چپ */}
+      <div className="md:hidden fixed bottom-4 left-10 z-50 w-12 h-12   flex items-center justify-center shadow-lg">
+        <LanguageToggle />
       </div>
     </>
   );
