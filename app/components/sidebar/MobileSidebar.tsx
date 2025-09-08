@@ -37,7 +37,7 @@ export default function MobileSidebar({ navLinks, tNav }: Props) {
       </div>
 
       {/* Language Toggle پایین سمت چپ */}
-      <div className="md:hidden fixed bottom-4 left-10 z-50 w-12 h-12  flex items-center justify-center shadow-lg">
+      <div className="md:hidden fixed bottom-4 left-10 z-50 w-12 h-12  flex items-center justify-center ">
         <LanguageToggle />
       </div>
     </>
