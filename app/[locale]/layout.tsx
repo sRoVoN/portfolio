@@ -4,14 +4,15 @@ import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import { getMessages } from "@/lib/getMessages";
 import { NextIntlClientProvider } from "next-intl";
-import '../globals.css';
+import "../globals.css";
 import Providers from "../../providers/theme-provider";
 import Sidebar from "../components/sidebar/Sidebar";
+import MobileSidebar from "../components/sidebar/MobileSidebar";
 import { getNavLinks } from "@/lib/navigation";
 import { getAllTranslations } from "@/lib/getAllTranslations";
 
 const vazirmatn = localFont({
-  src: '../../fonts/Vazirmatn-Regular.woff2',
+  src: "../../fonts/Vazirmatn-Regular.woff2",
   variable: "--font-vazir",
 });
 
@@ -25,14 +26,24 @@ export const metadata: Metadata = {
   description: "My multilingual portfolio",
 };
 
-export default async function LocaleLayout({children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
-const { locale } = await params;
-const selectedLocale = locale ?? 'en'
-const messages = await getMessages(selectedLocale);
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const selectedLocale = locale ?? "en";
+  const messages = await getMessages(selectedLocale);
   const isRTL = locale === "fa";
-  const navLinks = await getNavLinks((await params).locale);
-const { sidebar, nav, hero, about } = await getAllTranslations(locale, ['sidebar', 'nav', 'hero', 'about']);
-
+  const navLinks = await getNavLinks(locale);
+  const { sidebar, nav, hero, about } = await getAllTranslations(locale, [
+    "sidebar",
+    "nav",
+    "hero",
+    "about",
+  ]);
 
   return (
     <html
@@ -42,17 +53,30 @@ const { sidebar, nav, hero, about } = await getAllTranslations(locale, ['sidebar
       suppressHydrationWarning
     >
       <body
-        className={`${isRTL ? vazirmatn.variable : inter.variable} font-sans bg-slate-50 dark:bg-neutral-900 text-slate-900 dark:text-slate-100 min-h-screen`}
+        className={`${
+          isRTL ? vazirmatn.variable : inter.variable
+        } font-sans bg-slate-50 dark:bg-neutral-900 text-slate-900 dark:text-slate-100 min-h-screen`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
+            {/* Mobile Top Navigation */}
+            <MobileSidebar tNav={nav} navLinks={navLinks} />
+
+            {/* Main layout */}
             <div className="flex flex-col md:flex-row min-h-screen">
-            <aside className="min-h-screen hidden md:block md:w-1/4 lg:w-1/5 w-full border-r border-gray-200 dark:border-neutral-700">
-              <Sidebar navLinks={navLinks} tSidebar={sidebar} tNav={nav} tHero={hero} tAbout={about}  />
-            </aside>
-            <main className="md:w-3/4 lg:w-4/5 flex-1 ">
-              {children}
-            </main>
+              {/* Desktop Sidebar */}
+              <aside className="hidden md:flex md:flex-col md:w-1/4 lg:w-1/5 min-h-screen border-r border-gray-200 dark:border-neutral-700 p-4">
+                <Sidebar
+                  navLinks={navLinks}
+                  tSidebar={sidebar}
+                  tNav={nav}
+                  tHero={hero}
+                  tAbout={about}
+                />
+              </aside>
+
+              {/* Main Content */}
+              <main className="flex-1 md:w-3/4 lg:w-4/5 p-4">{children}</main>
             </div>
           </Providers>
         </NextIntlClientProvider>
