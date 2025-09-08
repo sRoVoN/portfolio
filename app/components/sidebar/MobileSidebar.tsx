@@ -32,12 +32,12 @@ export default function MobileSidebar({ navLinks, tNav }: Props) {
       </div>
 
       {/* Dark Mode Toggle پایین سمت راست */}
-      <div className="md:hidden fixed bottom-4 right-4 z-50 w-12 h-12  flex items-center justify-center shadow-lg">
+      <div className="md:hidden fixed bottom-4 right-4 z-50 w-12 h-12 rounded-full bg-white dark:bg-neutral-800 flex items-center justify-center shadow-lg">
         <ThemeToggle />
       </div>
 
       {/* Language Toggle پایین سمت چپ */}
-      <div className="md:hidden fixed bottom-4 left-10 z-50 w-12 h-12   flex items-center justify-center shadow-lg">
+      <div className="md:hidden fixed bottom-11 left-10 z-50 w-12 h-12 rounded-full bg-white dark:bg-neutral-800 flex items-center justify-center shadow-lg">
         <LanguageToggle />
       </div>
     </>
